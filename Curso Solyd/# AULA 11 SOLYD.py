@@ -1,2 +1,2 @@
-# AULA 11 SOLYD
+# AULA 11 SOLYD - Tratamento de erros e excessões
 
