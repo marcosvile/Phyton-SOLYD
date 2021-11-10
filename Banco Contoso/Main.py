@@ -23,6 +23,18 @@ cliente1 = Cliente('marcos', '123.123.123.12', 27)
 
 print(cliente1)
 
-conta_marcos = Conta(cliente1, 10.50)
+conta_marcos = Conta(cliente1, 10.50, 1000)
 
-print(conta_marcos.cliente.nome, conta_marcos.consulta())
+print(conta_marcos.cliente.nome, conta_marcos.saldo, conta_marcos.consulta)
+
+conta_marcos.depositar(1045.55)
+
+print(conta_marcos.saldo)
+
+conta_marcos.sacar(500)
+
+print(conta_marcos.saldo)
+
+conta_marcos.sacar(600)
+
+print(conta_marcos.saldo)

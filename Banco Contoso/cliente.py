@@ -6,4 +6,4 @@ class Cliente:
         self.idade = idade
 
     def __str__(self):
-        return "Nome: " + self.nome, + "\nCPF: " + self.cpf, + "\nIdade: " + self.idade 
+        return "Nome: " + self.nome + "\nCPF: " + self.cpf + "\nIdade: " + str(self.idade)
