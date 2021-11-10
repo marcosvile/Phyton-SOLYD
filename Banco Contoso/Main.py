@@ -16,9 +16,13 @@
 # depositar 
 # e consultar saldo 
 
-from class cliente import Cliente
+from cliente import Cliente
 from conta import Conta
 
-cliente1 = cliente('marcos', '123.123.123.12', 10.50)
+cliente1 = Cliente('marcos', '123.123.123.12', 27)
 
 print(cliente1)
+
+conta_marcos = Conta(cliente1, 10.50)
+
+print(conta_marcos.cliente.nome, conta_marcos.consulta())
