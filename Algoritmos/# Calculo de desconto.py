@@ -30,3 +30,4 @@ elif preco >= 1000:
 
 else:
     print("valor a pagar: ", preco)
+    print("seu troco é: ", pago - preco)
