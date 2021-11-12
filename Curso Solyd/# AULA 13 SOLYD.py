@@ -1,6 +1,6 @@
 # AULA 13 SOLYD
 
-# Consumo de API E Json
+# Consumo de API E Json - API da omdb nao esta funcionando mesmo com key
 
 import requests
 import json
@@ -8,8 +8,6 @@ import json
 def requisicao(reqtitle):
 
     try:
-
-#http://www.omdbapi.com/?apikey=[yourkey]&
 
 
         req = requests.get("http://www.omdbapi.com/?apikey=d00f3f58&=" + reqtitle)
