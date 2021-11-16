@@ -1,13 +1,15 @@
 # Exercicio - programa que busque a cotação do dolar e clima em tempo real
 
+# https://economia.awesomeapi.com.br/last/USD-BRL
+
 import re
 import requests
+import json
 
-requisicao = requests.get('https://br.investing.com')
+requisicao = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
 
-padrao = re.findall(r'dolar', requisicao.text)
+print(requisicao.text)
 
-if padrao:
-    print(padrao)
-else:
-    print("padrao nao encontrado")
+cotacao = json.loads(requisicao.text)
+
+print(cotacao['USDBRL'])
