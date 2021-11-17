@@ -1,4 +1,4 @@
-# AULA 14 SOLYD ---=-
+# AULA 14 SOLYD 
 
 # Expressões regulares
 
@@ -6,7 +6,7 @@
 # Expressões regulares também chamados de regex
 
 import re
-import requests sss
+import requests
 
 teste_search = 'o gato é bonito, a gata, o gatao.com os gatinhos, rh@exemplo.com, dp@exemplo.com'
 
