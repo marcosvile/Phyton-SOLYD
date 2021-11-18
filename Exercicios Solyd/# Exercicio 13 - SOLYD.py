@@ -6,10 +6,10 @@ import re
 import requests
 import json
 
-requisicao = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
+requisicao = requests.get('https://www.mercadobitcoin.net/api/BTC/trades')
 
 print(requisicao.text)
 
 cotacao = json.loads(requisicao.text)
 
-print(cotacao['USDBRL'])
+print(cotacao['price'])
