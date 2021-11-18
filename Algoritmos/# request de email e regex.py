@@ -3,11 +3,11 @@
 import re
 import requests
 
-requisicao = requests.get('http://lacoxinha.com.br/contato')
+requisicao = requests.get('https://lacoxinha.com.br/contato')
 
 padrao = re.findall(r'[\w\.-]+@[\w-]+\.[\w\.-]+', requisicao.text)
 
 if padrao:
-    print(padrao)
+    print(padrao[requisicao.text])
 else:
     print("padrao nao encontrado")
