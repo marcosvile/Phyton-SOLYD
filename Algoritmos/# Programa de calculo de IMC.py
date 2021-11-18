@@ -5,8 +5,14 @@
 # O cálculo de IMC serve para obter o indice de massa corporal, utlizando do calculo
 # IMC=peso/(alturaXaltura)
 
+print("-------------------------------------")
 peso=float(input('Qual o seu peso em kg: ')) #entrada do peso, variavel do tipo float
+print("-------------------------------------")
+
+print("-------------------------------------")
 altura=float(input('Qual a sua altura em metros: ')) #entrada da altura, variavel do tipo float
+print("-------------------------------------")
+
 
 IMC=(float(peso)/(float(altura)*(float(altura)))) #para o calculo funcionar, necessario indicar o tipo da variavel como float 
                                                   #para o calculo funcionar, para o calculo funcionar, as informações float devem
@@ -20,8 +26,9 @@ IMC=(float(peso)/(float(altura)*(float(altura)))) #para o calculo funcionar, nec
 #35 a 40 kg/m² - Obesidade grau II 
 #maior que 40 kg/m² - Obesidade grau III#
 
-
+print("-------------------------------------")
 print("seu IMC, Índice de Massa Corporal é:", IMC)
+print("-------------------------------------")
 
 if IMC < 16.9:
     print("você está muito abaixo do peso")
