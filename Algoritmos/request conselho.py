@@ -1,7 +1,7 @@
 # Request conselho grátis
 # este algoritmo busca uma frase de efeito aleatorio de uma API gratis da web
 
-# Dev: marcosvile
+# Dev: https://github.com/marcosvile
 # API: https://api.adviceslip.com/ by https://github.com/tomkiss
 
 import requests
