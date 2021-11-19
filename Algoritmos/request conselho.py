@@ -1,4 +1,5 @@
 # Request conselho grátis
+# este algoritmo busca uma frase de efeito aleatorio de uma API gratis da web
 
 import requests
 import json
