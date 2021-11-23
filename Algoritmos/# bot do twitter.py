@@ -7,15 +7,14 @@
 # AAAAAAAAAAAAAAAAAAAAAEDjVwEAAAAAhUkTCeXLpfdXyU51nkMmiItMVCk%3DAgEHQ2RpKh8MKQ9jk9z11lvjeC1nWGvpOXlXxzwYqbJxp8DYd1 baren token
 
 consumerkey = 'euVS6EpyjhaGomigXJhY5RquT'
-keysecret = 'egknpux5Q0ilr0aUq7YoVOQogrJWVc6xYD727Fv0uhjOXZI7m6'
-consumertoken = 'AAAAAAAAAAAAAAAAAAAAAM5TWAEAAAAAd7qiFpneqVkzoHm4UPHcZGREAvw%3DpVZn8nSMxnM1fOSFW2yoAO26TjXlh1QuBjR2riHeja358Bah7C'
+consumersecret = 'egknpux5Q0ilr0aUq7YoVOQogrJWVc6xYD727Fv0uhjOXZI7m6'
+bearertoken = 'AAAAAAAAAAAAAAAAAAAAAM5TWAEAAAAAd7qiFpneqVkzoHm4UPHcZGREAvw%3DpVZn8nSMxnM1fOSFW2yoAO26TjXlh1QuBjR2riHeja358Bah7C'
 
-import re
+import requests
+import os
 import json
-import oauth2 as oauth
-#import TwitterAPI
 
-consumer = oauth2.consumer (consumerkey, consumertoken)
+bearer_token = os.environ.get("AAAAAAAAAAAAAAAAAAAAAM5TWAEAAAAAd7qiFpneqVkzoHm4UPHcZGREAvw%3DpVZn8nSMxnM1fOSFW2yoAO26TjXlh1QuBjR2riHeja358Bah7C")
 
 
 
