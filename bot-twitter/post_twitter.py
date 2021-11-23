@@ -1,16 +1,10 @@
-#consumer keys:
-# api key gPiZzk9nRg0YZABbk0lExWTlh
-# api secret key 6yKSWYoJFDnmI2PqzvZEfKwFTojp7763hdbcYilxr7XQ7ZaCTY
+# funcao que realiza o post no twitter
+# o mesmo pega os arquivos de configuração que servem para autenticar no perfil
 
-#authentication tokens:
-# bearer token AAAAAAAAAAAAAAAAAAAAAEZZWAEAAAAAMGoEHCMbZrVoA6PjY31qyP9tmXs%3Dq3gqI7mgXJPNbcj1xIeN1UNQH9g7mM6L1iv83gaHwIxNTjXDSd
-
-# access token 1457323725305614337-C8EF4XYtxnu3QcZPsDUMicJrlTq7ve
-# access token secret yiAEDNzl1AXh0uKKVip9rCM2wVgnVtr7bcvBYbYyHukFR
-
-import tweepy, time, sys
+import tweepy
 import settings
-from issues import get_random_conselho
+
+from funcao_conselho import get_random_conselho
  
 CONSUMER_KEY = settings.ENV['CONSUMER_KEY']
 CONSUMER_SECRET = settings.ENV['CONSUMER_SECRET']
