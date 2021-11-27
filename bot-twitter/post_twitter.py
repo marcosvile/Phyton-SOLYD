@@ -33,6 +33,6 @@ api = tweepy.API(auth)
    # api.verify_credentials()
    # print("Authentication Successful")
 #except:
- #   print("Authentication Error")
+ #   print("Authentication Error").
     
 api.update_status(get_random_conselho())
